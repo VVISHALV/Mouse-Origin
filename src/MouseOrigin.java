@@ -2,12 +2,20 @@
   
 import java.awt.event.*;  
 import javax.swing.*;
+import java.awt.*;
 
 
 public class MouseOrigin  {
   
+  
    public static void frame()
-  { JFrame f=new JFrame("Mouse");
+  { /*Point p = MouseInfo.getPointerInfo().getLocation();
+    while(true)
+    {p = MouseInfo.getPointerInfo().getLocation();
+      if(p.y==0)return;
+      Client.mouseMotionSend(p.x,p.y);
+    System.out.println(p.x+" "+p.y);}*/
+   JFrame f=new JFrame("Mouse");
     f.setBounds(0, 0, 100, 100);
     f.setVisible(true);
     f.setLayout(null);
